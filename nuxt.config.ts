@@ -20,6 +20,8 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     '@nuxt/image',
     '@nuxt/ui',
+    '@compodium/nuxt',
+    '@nuxtjs/color-mode'
   ],
   app: {
     head: {
