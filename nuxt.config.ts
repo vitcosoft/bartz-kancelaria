@@ -34,5 +34,15 @@ export default defineNuxtConfig({
         lang: 'pl'
       }
     }
+  },
+  css: ['~/assets/css/main.css', 'animate.css'],
+  fonts: {
+    processCSSVariables: true,
+    families: [
+      {
+        name: 'Inter',
+        provider: 'google'
+      }
+    ]
   }
 })
