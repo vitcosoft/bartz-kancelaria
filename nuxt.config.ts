@@ -21,5 +21,18 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxt/ui',
     '@nuxtjs/sitemap'
-  ]
+  ],
+  app: {
+    head: {
+      charset: 'utf-8',
+      viewport: 'width=device-width,initial-scale=1',
+      title: 'Kancelaria Bartz',
+      meta: [
+        { name: 'description', content: 'Strona WWW Kancelarii Radcy Prawnego Justyna Bartz' },
+      ],
+      htmlAttrs: {
+        lang: 'pl'
+      }
+    }
+  }
 })
