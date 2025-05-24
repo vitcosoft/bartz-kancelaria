@@ -20,7 +20,11 @@
               stroke-width="1.5"
               stroke="currentColor"
               class="size-6 hover:stroke-indigo-600"
+              aria-labelledby="logoTitle"
             >
+              <title id="logoTitle">
+                Logo Kancelarii Radcy Prawnego Justyna Bartz
+              </title>
               <path
                 stroke-linecap="round"
                 stroke-linejoin="round"
@@ -29,10 +33,11 @@
             </svg>
           </a>
         </div>
-        <nav role="navigation">
+        <nav>
           <div class="relative z-2 select-none md:hidden">
             <input
               id="mobile-menu-toggle"
+              aria-controls="mobile-menu"
               name="mobile-menu-toggle"
               type="checkbox"
               class="peer absolute z-4 size-6 cursor-pointer opacity-0"
@@ -86,15 +91,22 @@
               <a
                 href="/"
                 class="block border-t-2 border-b-2 p-3 hover:bg-slate-800"
+                aria-current="page"
                 ><li class="w-full">Witamy</li></a
               >
-              <a class="block border-b-2 p-3 hover:bg-slate-800"
+              <a
+                class="block border-b-2 p-3 hover:bg-slate-800"
+                aria-current="page"
                 ><li class="w-full">Kancelaria</li></a
               >
-              <a class="block border-b-2 p-3 hover:bg-slate-800"
+              <a
+                class="block border-b-2 p-3 hover:bg-slate-800"
+                aria-current="page"
                 ><li class="w-full">Oferta</li></a
               >
-              <a class="block border-b-2 p-3 hover:bg-slate-800"
+              <a
+                class="block border-b-2 p-3 hover:bg-slate-800"
+                aria-current="page"
                 ><li class="w-full">Kontakt</li></a
               >
             </ul>
@@ -102,16 +114,33 @@
           <div class="z-2 hidden items-center justify-between md:block">
             <ul class="flex space-x-4">
               <li class="px-3">
-                <a href="/" class="hover:text-indigo-500">Witamy</a>
+                <a href="/" class="hover:text-indigo-500" aria-current="page"
+                  >Witamy</a
+                >
               </li>
               <li class="px-3">
-                <a href="#about" class="hover:text-indigo-500">Kancelaria</a>
+                <a
+                  href="#about"
+                  class="hover:text-indigo-500"
+                  aria-current="page"
+                  >Kancelaria</a
+                >
               </li>
               <li class="px-3">
-                <a href="#services" class="hover:text-indigo-500">Oferta</a>
+                <a
+                  href="#services"
+                  class="hover:text-indigo-500"
+                  aria-current="page"
+                  >Oferta</a
+                >
               </li>
               <li class="px-3">
-                <a href="#contact" class="hover:text-indigo-500">Kontakt</a>
+                <a
+                  href="#contact"
+                  class="hover:text-indigo-500"
+                  aria-current="page"
+                  >Kontakt</a
+                >
               </li>
             </ul>
           </div>
