@@ -9,9 +9,9 @@
   <body
     class="bg-slate-50 font-sans text-slate-950 dark:bg-slate-950 dark:text-slate-50"
   >
-    <header class="w-screen border-solid bg-slate-950 dark:border-b-2">
+    <header class="z-10 w-screen border-solid bg-slate-950 dark:border-b-2">
       <div class="mx-auto flex max-w-7xl items-center justify-between p-4">
-        <div class="z-4">
+        <div class="z-50">
           <a href="/">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -34,17 +34,17 @@
           </a>
         </div>
         <nav>
-          <div class="relative z-2 select-none md:hidden">
+          <div class="relative select-none md:hidden">
             <input
               id="mobile-menu-toggle"
               aria-controls="mobile-menu"
               name="mobile-menu-toggle"
               type="checkbox"
-              class="peer absolute z-4 size-6 cursor-pointer opacity-0"
+              class="peer absolute z-50 size-6 cursor-pointer opacity-0"
             />
             <label
               for="mobile-menu-toggle"
-              class="relative z-3 block size-6 peer-checked:hidden"
+              class="relative z-40 block size-6 peer-checked:hidden"
             >
               <span class="sr-only">Otwórz menu główne</span>
               <svg
@@ -65,7 +65,7 @@
             </label>
             <label
               for="mobile-menu-toggle"
-              class="relative z-3 hidden size-6 peer-checked:block"
+              class="relative z-40 hidden size-6 peer-checked:block"
             >
               <span class="sr-only">Zamknij menu główne</span>
               <svg
@@ -86,32 +86,40 @@
             </label>
             <ul
               id="mobile-menu"
-              class="fixed top-0 right-0 left-0 z-2 flex h-auto max-h-screen -translate-y-full flex-col overflow-y-auto bg-slate-950 pt-14 peer-checked:translate-y-0"
+              class="fixed top-0 right-0 left-0 flex h-auto max-h-screen -translate-y-full flex-col overflow-y-auto bg-slate-950 pt-14 peer-checked:translate-y-0"
             >
-              <a
-                href="/"
-                class="block border-t-2 border-b-2 p-3 hover:bg-slate-800"
-                aria-current="page"
-                ><li class="w-full">Witamy</li></a
-              >
-              <a
-                class="block border-b-2 p-3 hover:bg-slate-800"
-                aria-current="page"
-                ><li class="w-full">Kancelaria</li></a
-              >
-              <a
-                class="block border-b-2 p-3 hover:bg-slate-800"
-                aria-current="page"
-                ><li class="w-full">Oferta</li></a
-              >
-              <a
-                class="block border-b-2 p-3 hover:bg-slate-800"
-                aria-current="page"
-                ><li class="w-full">Kontakt</li></a
-              >
+              <li class="w-full">
+                <a
+                  href="/"
+                  class="block border-t-2 border-b-2 p-3 hover:bg-slate-800"
+                  aria-current="page"
+                  >Witamy</a
+                >
+              </li>
+              <li class="w-full">
+                <a
+                  class="block border-b-2 p-3 hover:bg-slate-800"
+                  aria-current="page"
+                  >Kancelaria</a
+                >
+              </li>
+              <li class="w-full">
+                <a
+                  class="block border-b-2 p-3 hover:bg-slate-800"
+                  aria-current="page"
+                  >Oferta</a
+                >
+              </li>
+              <li class="w-full">
+                <a
+                  class="block border-b-2 p-3 hover:bg-slate-800"
+                  aria-current="page"
+                  >Kontakt</a
+                >
+              </li>
             </ul>
           </div>
-          <div class="z-2 hidden items-center justify-between md:block">
+          <div class="hidden items-center justify-between md:block">
             <ul class="flex space-x-4">
               <li class="px-3">
                 <a href="/" class="hover:text-indigo-500" aria-current="page"

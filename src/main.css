@@ -45,12 +45,3 @@
   --font-serif: 'Roboto Serif Variable';
   --font-mono: 'Roboto Mono Variable';
 }
-
-:root {
-  details summary::-webkit-details-marker {
-    display: none;
-  }
-  details > summary {
-    list-style: none;
-  }
-}
