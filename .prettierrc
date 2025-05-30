@@ -5,5 +5,5 @@
   "semi": false,
   "singleQuote": true,
   "plugins": ["prettier-plugin-tailwindcss", "prettier-plugin-organize-imports", "prettier-plugin-pkg"],
-  "tailwindStylesheet": "./src/main.css"
+  "tailwindStylesheet": "./assets/css/main.css"
 }
