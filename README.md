@@ -1,51 +1,75 @@
-# Bartz Kancelaria
+# Nuxt Minimal Starter
 
-Strona WWW dla Kancelarii Radcy Prawnego Justyna Bartz. Strona ma na celu dostępne informowanie o zakresie oraz profilu działalności Kancelarii.
+Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
-## Spis Treści
+## Setup
 
-- [Stos Technologiczny](#stos-technologiczny)
-- [Instalacja](#instalacja)
-- [Użycie](#użycie)
-- [Autorzy](#autorzy)
-- [Licencja](#licencja)
-
-## Stos Technologiczny
-
-Projekt został zbudowany przy użyciu następujących technologii:
-
-- **Frontend:** HTML, CSS (Tailwind CSS), JavaScript
-- **Build Tool:** Vite
-- **Czcionki:** Roboto Variable, Roboto Serif Variable, Roboto Mono Variable (via Google Fonts/Fontsource)
-- **Animacje:** Animate.css
-- **Formatter kodu:** Prettier z wtyczką Tailwind CSS
-
-## Instalacja
-
-Aby uruchomić ten projekt lokalnie, wykonaj następujące kroki:
-
-1.  Sklonuj repozytorium:
-    ```bash
-    git clone [URL_DO_REPOZYTORIUM]
-    cd bartz-kancelaria
-    ```
-2.  Zainstaluj zależności (wymagany Node.js i npm/yarn/pnpm):
-    ```bash
-    npm install
-    # lub
-    # yarn install
-    # lub
-    # pnpm install
-    ```
-
-## Użycie
-
-Po zakończeniu instalacji, możesz uruchomić serwer deweloperski:
+Make sure to install dependencies:
 
 ```bash
-npm run dev
+# npm
+npm install
+
+# pnpm
+pnpm install
+
+# yarn
+yarn install
+
+# bun
+bun install
 ```
 
-## Autor
+## Development Server
 
-Witold Woźniak @ https://github.com/vitcosoft
+Start the development server on `http://localhost:3000`:
+
+```bash
+# npm
+npm run dev
+
+# pnpm
+pnpm dev
+
+# yarn
+yarn dev
+
+# bun
+bun run dev
+```
+
+## Production
+
+Build the application for production:
+
+```bash
+# npm
+npm run build
+
+# pnpm
+pnpm build
+
+# yarn
+yarn build
+
+# bun
+bun run build
+```
+
+Locally preview production build:
+
+```bash
+# npm
+npm run preview
+
+# pnpm
+pnpm preview
+
+# yarn
+yarn preview
+
+# bun
+bun run preview
+```
+
+Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
