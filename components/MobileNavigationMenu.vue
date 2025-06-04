@@ -24,23 +24,7 @@
 <script setup lang="ts">
 import type { NavigationMenuItem } from '@nuxt/ui'
 
-const items = ref<NavigationMenuItem[]>([
-  {
-    label: 'Strona Główna',
-    icon: '',
-    to: '/',
-  },
-  {
-    label: 'O Kancelarii',
-    icon: '',
-    to: '/o-kancelarii',
-  },
-  {
-    label: 'Kontakt',
-    icon: '',
-    to: '/kontakt',
-  },
-])
+const items = ref<NavigationMenuItem[]>(getNavgationItems())
 
 const open = ref(false)
 
