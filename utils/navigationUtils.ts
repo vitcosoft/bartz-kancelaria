@@ -1,6 +1,6 @@
 import type { NavigationMenuItem } from '@nuxt/ui'
 
-export function getNavgationItems(): NavigationMenuItem[] {
+export function getNavigationItems(): NavigationMenuItem[] {
   const navigationItems = [
     {
       label: 'Strona Główna',
