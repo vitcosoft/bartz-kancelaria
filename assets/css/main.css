@@ -2,6 +2,12 @@
 @import "@nuxt/ui";
 
 
+@theme {
+  --font-sans: 'Roboto Variable', sans-serif;
+  --font-serif: 'Roboto Serif Variable', serif;
+  --font-mono: 'Roboto Mono Variable', monospace;
+}
+
 @font-face {
   font-family: 'Roboto Variable';
   font-style: normal;
