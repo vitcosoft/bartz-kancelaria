@@ -9,7 +9,6 @@
       size="xl"
       variant="ghost"
       class="w-8 h-8 flex place-content-center"
-      @click="toggleMobileMenu"
     />
     <template #body>
       <UNavigationMenu
@@ -24,11 +23,5 @@
 <script setup lang="ts">
 import type { NavigationMenuItem } from '@nuxt/ui'
 
-const items = ref<NavigationMenuItem[]>(getNavgationItems())
-
-const open = ref(false)
-
-function toggleMobileMenu(): void {
-  open.value = !open.value
-}
+const items = ref<NavigationMenuItem[]>(getNavigationItems())
 </script>

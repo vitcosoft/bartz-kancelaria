@@ -13,6 +13,7 @@
         <ULink
           target="_blank"
           to="https://www.facebook.com/?locale=pl_PL"
+          rel="noopener noreferrer"
         >
           <Icon
             name="fa6-brands:square-facebook"
@@ -22,6 +23,7 @@
         <ULink
           target="_blank"
           to="https://www.google.com"
+          rel="noopener noreferrer"
         >
           <Icon
             name="fa6-brands:google"

@@ -9,5 +9,5 @@
 <script setup lang="ts">
 import type { NavigationMenuItem } from '@nuxt/ui'
 
-const items = ref<NavigationMenuItem[]>(getNavgationItems())
+const items = ref<NavigationMenuItem[]>(getNavigationItems())
 </script>
