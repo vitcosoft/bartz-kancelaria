@@ -9,7 +9,7 @@
       </NuxtLink>
       <MobileNavigationMenu class="block md:hidden" />
       <DesktopNavigationMenu class="hidden md:block" />
-      <div class="flex justify-between items-center gap-3">
+      <div class="hidden md:flex justify-between items-center gap-3">
         <ULink
           target="_blank"
           to="https://www.facebook.com/?locale=pl_PL"
