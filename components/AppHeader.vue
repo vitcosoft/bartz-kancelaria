@@ -7,9 +7,13 @@
       <NuxtLink to="/">
         <BrandLogo />
       </NuxtLink>
-      <MobileNavigationMenu class="block md:hidden" />
+      <div class="flex md:hidden justify-between items-center gap-3">
+        <ColorModeSwitch />
+        <MobileNavigationMenu />
+      </div>
       <DesktopNavigationMenu class="hidden md:block" />
       <div class="hidden md:flex justify-between items-center gap-3">
+        <ColorModeSwitch />
         <ULink
           target="_blank"
           to="https://www.facebook.com/?locale=pl_PL"
@@ -35,5 +39,5 @@
   </header>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
 </script>
