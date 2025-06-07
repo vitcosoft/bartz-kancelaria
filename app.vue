@@ -1,5 +1,5 @@
 <template>
-  <UApp>
+  <UApp class="font-sans">
     <AppHeader />
     <NuxtPage />
   </UApp>
