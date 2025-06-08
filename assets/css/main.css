@@ -8,3 +8,6 @@
   --font-mono: 'Roboto Mono', monospace;
 }
 
+@utility work-in-progress {
+  display: none;
+}
