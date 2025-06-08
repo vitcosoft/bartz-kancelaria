@@ -3,7 +3,7 @@
     <UContainer>
       <div class="flex flex-col md:flex-row gap-6 p-6 md:p-0">
         <div class="md:flex-1">
-          <h3 class="text-md font-semibold text-white mb-4">
+          <h3 class="text-md font-semibold mb-4">
             Na skróty
           </h3>
           <div
@@ -17,7 +17,7 @@
           </div>
         </div>
         <div class="md:flex-1">
-          <h3 class="text-md font-semibold text-white mb-4">
+          <h3 class="text-md font-semibold mb-4">
             Wsparcie
           </h3>
           <div class="flex flex-col space-y-2">
