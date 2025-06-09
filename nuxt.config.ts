@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   modules: ['@nuxt/ui', '@nuxt/eslint'],
   devtools: { enabled: true },
   app: {
-    baseURL: '/<bartz-kancelaria>/',
+    baseURL: '/bartz-kancelaria/',
   },
   css: ['~/assets/css/main.css'],
   compatibilityDate: '2025-05-15',
