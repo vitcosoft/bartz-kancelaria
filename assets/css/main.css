@@ -12,6 +12,10 @@
   display: none;
 }
 
+/*
+ * Fixes icon misalignment in the Nuxt UI Switch component.
+ * Targets Iconify icons within the switch to ensure they are perfectly centered.
+ */
 button[role="switch"] span > span[class*="iconify"] {
   position: absolute;
   top: 50%;
