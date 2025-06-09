@@ -1,5 +1,5 @@
 <template>
-  <UApp class="font-sans">
+  <UApp class="font-sans bg-muted">
     <AppHeader />
     <USeparator class="my-1 w-full" />
     <NuxtPage />
