@@ -20,7 +20,7 @@
           rel="noopener noreferrer"
         >
           <Icon
-            name="fa6-brands:square-facebook"
+            name="logos:facebook"
             class="w-5 h-5 flex place-content-center"
           />
         </ULink>
@@ -30,7 +30,7 @@
           rel="noopener noreferrer"
         >
           <Icon
-            name="fa6-brands:google"
+            name="logos:google-maps"
             class="w-5 h-5 flex place-content-center"
           />
         </ULink>

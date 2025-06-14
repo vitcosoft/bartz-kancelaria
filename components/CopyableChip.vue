@@ -68,7 +68,7 @@ const sizeClasses = computed(() => {
       :text="copied ? props.tooltipCopied : props.tooltipCopy"
     >
       <UButton
-        :icon="copied ? 'i-mdi-check' : 'i-mdi-content-copy'"
+        :icon="copied ? 'material-symbols:check-rounded' : 'material-symbols:content-copy-rounded'"
         variant="ghost"
         :padded="false"
         @click.stop="copy()"
