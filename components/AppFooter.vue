@@ -29,23 +29,7 @@
           </div>
         </div>
         <div class="md:flex-1">
-          <address class="not-italic">
-            <p>Kancelaria Radcy Prawnego Justyna Bartz</p>
-            <p>ul. Przykładowa 123</p>
-            <p>00-000 Płock, Polska</p>
-            <p>NIP: 7741343151</p>
-            <p>REGON: 141443283</p>
-            <p class="mt-2">
-              <ULink
-                href="tel:+48606686864"
-              >tel: +48 606 686 864</ULink>
-            </p>
-            <p>
-              <ULink
-                href="mailto:poczta@bartz-kancelaria.pl"
-              >poczta@bartz-kancelaria.pl</ULink>
-            </p>
-          </address>
+          <ContactInfo />
         </div>
       </div>
     </UContainer>
