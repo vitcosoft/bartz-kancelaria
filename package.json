@@ -23,8 +23,8 @@
     "vue-router": "^4.5.1"
   },
   "devDependencies": {
-    "@iconify-json/logos": "^1.2.4",
     "@iconify-json/material-symbols": "^1.2.26",
+    "@iconify-json/simple-icons": "^1.2.38",
     "typescript": "^5.8.3"
   }
 }
