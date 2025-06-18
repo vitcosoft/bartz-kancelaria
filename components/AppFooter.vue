@@ -1,8 +1,8 @@
 <template>
   <footer class="py-6 text-base">
     <UContainer>
-      <div class="flex flex-col md:flex-row gap-6 p-6 md:p-0">
-        <div class="md:flex-1">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 p-6 md:p-0">
+        <div class="work-in-progress">
           <h3 class="text-md font-semibold mb-4">
             Na skróty
           </h3>
@@ -17,7 +17,8 @@
             </ULink>
           </div>
         </div>
-        <div class="md:flex-1">
+
+        <div class="work-in-progress">
           <h3 class="text-md font-semibold mb-4">
             Wsparcie
           </h3>
@@ -38,7 +39,8 @@
             </ULink>
           </div>
         </div>
-        <div class="md:flex-1">
+
+        <div class="md:col-start-2">
           <ContactInfo
             class="hidden md:block"
             size="sm"
