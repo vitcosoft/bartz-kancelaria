@@ -23,13 +23,18 @@ export default defineAppConfig({
   socials: [
     {
       name: 'Facebook',
-      url: 'https://www.facebook.com/?locale=pl_PL',
+      url: 'https://www.facebook.com/people/Kancelaria-Radcy-Prawnego-Justyna-Bartz/100063482773597/',
       icon: 'simple-icons:facebook',
     },
     {
       name: 'Google Maps',
-      url: 'https://www.google.com',
+      url: 'https://g.co/kgs/vDpAoT2',
       icon: 'simple-icons:googlemaps',
+    },
+    {
+      name: 'LinkedIn',
+      url: 'https://www.linkedin.com/in/justyna-bartz-510353114/',
+      icon: 'simple-icons:linkedin',
     },
   ],
 
