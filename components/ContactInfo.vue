@@ -1,12 +1,12 @@
 <template>
   <div>
     <address
-      class="not-italic grid grid-cols-[auto_1fr] gap-x-3 gap-y-4 items-center"
+      class="not-italic grid grid-cols-[auto_1fr] gap-4 items-center"
       :class="addressClasses"
     >
       <Icon
         name="material-symbols:home-work-rounded"
-        class="size-8 self-start"
+        class="size-7 self-start"
       />
       <div>
         <p>{{ appConfig.contact.name }}</p>
@@ -15,8 +15,17 @@
       </div>
 
       <Icon
+        name="material-symbols:id-card-rounded"
+        class="size-7 self-start"
+      />
+      <div>
+        <p>NIP: {{ appConfig.contact.nip }}</p>
+        <p>REGON: {{ appConfig.contact.regon }}</p>
+      </div>
+
+      <Icon
         name="material-symbols:phone-in-talk-rounded"
-        class="size-8"
+        class="size-7"
       />
       <ULink :href="`tel:${appConfig.contact.phone.replace(/\s/g, '')}`">
         {{ appConfig.contact.phone }}
@@ -24,25 +33,11 @@
 
       <Icon
         name="material-symbols:alternate-email-rounded"
-        class="size-8"
+        class="size-7"
       />
       <ULink :href="`mailto:${appConfig.contact.email}`">
         {{ appConfig.contact.email }}
       </ULink>
-
-      <CopyableChip
-        label="NIP"
-        :value="appConfig.contact.nip"
-        class="col-span-2"
-        :size="chipSize"
-      />
-
-      <CopyableChip
-        label="REGON"
-        :value="appConfig.contact.regon"
-        class="col-span-2"
-        :size="chipSize"
-      />
     </address>
   </div>
 </template>
@@ -67,20 +62,6 @@ const addressClasses = computed(() => {
     case 'md':
     default:
       return 'text-base'
-  }
-})
-
-const chipSize = computed(() => {
-  switch (props.size) {
-    case 'xs':
-    case 'sm':
-      return 'sm'
-    case 'lg':
-    case 'xl':
-      return 'lg'
-    case 'md':
-    default:
-      return 'md'
   }
 })
 
