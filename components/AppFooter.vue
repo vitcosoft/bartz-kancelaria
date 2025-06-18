@@ -11,6 +11,7 @@
               v-for="link in appConfig.navigation.shortcuts"
               :key="link.to"
               :to="link.to"
+              class="hover:text-primary"
             >
               {{ link.label }}
             </ULink>
@@ -25,8 +26,15 @@
               v-for="link in appConfig.navigation.support"
               :key="link.to"
               :to="link.to"
+              class="hover:text-primary"
             >
               {{ link.label }}
+            </ULink>
+            <ULink
+              to="/kontakt"
+              class="hover:text-primary"
+            >
+              Kontakt
             </ULink>
           </div>
         </div>
