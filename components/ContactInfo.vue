@@ -6,7 +6,7 @@
     >
       <Icon
         name="material-symbols:home-work-rounded"
-        class="size-7 self-start"
+        class="size-7 self-start hover:text-primary"
       />
       <div>
         <p>{{ appConfig.contact.name }}</p>
@@ -16,7 +16,7 @@
 
       <Icon
         name="material-symbols:id-card-rounded"
-        class="size-7 self-start"
+        class="size-7 self-start hover:text-primary"
       />
       <div>
         <p>NIP: {{ appConfig.contact.nip }}</p>
@@ -25,7 +25,7 @@
 
       <Icon
         name="material-symbols:phone-in-talk-rounded"
-        class="size-7"
+        class="size-7 self-center hover:text-primary"
       />
       <ULink :href="`tel:${appConfig.contact.phone.replace(/\s/g, '')}`">
         {{ appConfig.contact.phone }}
@@ -33,7 +33,7 @@
 
       <Icon
         name="material-symbols:alternate-email-rounded"
-        class="size-7"
+        class="size-7 self-center hover:text-primary"
       />
       <ULink :href="`mailto:${appConfig.contact.email}`">
         {{ appConfig.contact.email }}
