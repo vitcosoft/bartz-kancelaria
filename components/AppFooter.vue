@@ -6,14 +6,14 @@
           <h3 class="text-md font-semibold mb-4">
             Na skróty
           </h3>
-          <div
-            class="flex flex-col space-y-2"
-          >
-            <ULink to="localhost:3000">Skrót 1</ULink>
-            <ULink to="localhost:3000">Skrót 2</ULink>
-            <ULink to="localhost:3000">Skrót 3</ULink>
-            <ULink to="localhost:3000">Skrót 4</ULink>
-            <ULink to="localhost:3000">Skrót 5</ULink>
+          <div class="flex flex-col space-y-2">
+            <ULink
+              v-for="link in appConfig.navigation.shortcuts"
+              :key="link.to"
+              :to="link.to"
+            >
+              {{ link.label }}
+            </ULink>
           </div>
         </div>
         <div class="md:flex-1">
@@ -21,11 +21,13 @@
             Wsparcie
           </h3>
           <div class="flex flex-col space-y-2">
-            <ULink to="localhost:3000">FAQ</ULink>
-            <ULink to="localhost:3000">Kontakt</ULink>
-            <ULink to="localhost:3000">Regulamin</ULink>
-            <ULink to="localhost:3000">Inny regulamin</ULink>
-            <ULink to="localhost:3000">Polityka prywatności</ULink>
+            <ULink
+              v-for="link in appConfig.navigation.support"
+              :key="link.to"
+              :to="link.to"
+            >
+              {{ link.label }}
+            </ULink>
           </div>
         </div>
         <div class="md:flex-1">
@@ -42,7 +44,7 @@
     </UContainer>
     <USeparator class="my-5 w-full" />
     <p class="mt-4 text-center text-xs">
-      &copy; {{ currentYear }} Kancelaria Radcy Prawnego Justyna Bartz.
+      &copy; {{ currentYear }} {{ appConfig.contact.name }}.
     </p>
     <p class="text-center text-xs">
       Wszelkie prawa zastrzeżone.
@@ -51,6 +53,6 @@
 </template>
 
 <script setup lang="ts">
-const now = new Date()
-const currentYear = ref(now.getFullYear())
+const appConfig = useAppConfig()
+const currentYear = new Date().getFullYear()
 </script>
