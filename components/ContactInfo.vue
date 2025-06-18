@@ -9,37 +9,37 @@
         class="size-8 self-start"
       />
       <div>
-        <p>Kancelaria&nbsp;Radcy&nbsp;Prawnego Justyna&nbsp;Bartz</p>
-        <p>ul. Przykładowa 12/3</p>
-        <p>09-410 Płock</p>
+        <p>{{ appConfig.contact.name }}</p>
+        <p>{{ appConfig.contact.address.street }}</p>
+        <p>{{ appConfig.contact.address.zip }} {{ appConfig.contact.address.city }}</p>
       </div>
 
       <Icon
         name="material-symbols:phone-in-talk-rounded"
         class="size-8"
       />
-      <ULink href="tel:+48606686864">
-        +48 606 686 864
+      <ULink :href="`tel:${appConfig.contact.phone.replace(/\s/g, '')}`">
+        {{ appConfig.contact.phone }}
       </ULink>
 
       <Icon
         name="material-symbols:alternate-email-rounded"
         class="size-8"
       />
-      <ULink href="mailto:poczta@bartz-kancelaria.pl">
-        poczta@bartz-kancelaria.pl
+      <ULink :href="`mailto:${appConfig.contact.email}`">
+        {{ appConfig.contact.email }}
       </ULink>
 
       <CopyableChip
         label="NIP"
-        value="7741343151"
+        :value="appConfig.contact.nip"
         class="col-span-2"
         :size="chipSize"
       />
 
       <CopyableChip
         label="REGON"
-        value="141443283"
+        :value="appConfig.contact.regon"
         class="col-span-2"
         :size="chipSize"
       />
@@ -83,4 +83,6 @@ const chipSize = computed(() => {
       return 'md'
   }
 })
+
+const appConfig = useAppConfig()
 </script>
